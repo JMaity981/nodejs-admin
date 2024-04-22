@@ -1,0 +1,1 @@
+const countButtons=document.querySelectorAll(".count-button");countButtons.forEach((t=>{t.addEventListener("click",(()=>{const n=t.querySelector(".count-number");let e=parseInt(n.textContent);e++,n.textContent=e}))}));

@@ -1,0 +1,25 @@
+<%- contentFor('HeaderCss') %>
+  <%- include ('partials/title-meta', {"title":"Bubble Charts"}) %>
+
+  <%- contentFor('body') %>
+<%-include("partials/page-title", {"pagetitle": "Apexcharts" , "title" : "Bubble Charts" }) %>
+<div class="grid grid-cols-1 gap-x-5 xl:grid-cols-2">
+    <div class="card">
+        <div class="card-body">
+            <h6 class="mb-4 text-15">Simple</h6>
+            <div id="simpleChart" class="apex-charts" data-chart-colors='["bg-custom-500", "bg-green-500", "bg-orange-500", "bg-yellow-500"]' dir="ltr"></div>
+        </div>
+    </div><!--end card-->
+    <div class="card">
+        <div class="card-body">
+            <h6 class="mb-4 text-15">3D Bubble</h6>
+            <div id="bubble_chart" class="apex-charts" data-chart-colors='["bg-sky-500", "bg-yellow-500", "bg-red-500", "bg-purple-500"]' dir="ltr"></div>
+        </div>
+    </div><!--end card-->
+</div><!--end grid-->
+    <%- contentFor('FooterJs') %>
+    <!-- apexcharts js -->
+    <script src="/assets/libs/apexcharts/apexcharts.min.js"></script>
+    
+    <!-- bubble init js-->
+    <script src="/assets/js/pages/apexcharts-bubble.init.js"></script>

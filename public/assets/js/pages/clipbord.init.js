@@ -1,0 +1,1 @@
+var clipboard=new ClipboardJS("#copyButton, #cutButton");clipboard.on("success",(function(o){alert("Copied text: "+o.text)})),clipboard.on("error",(function(o){alert("Copy/Cut failed")}));

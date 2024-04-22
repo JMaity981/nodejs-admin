@@ -1,0 +1,34 @@
+<%- include ('../partials/main.ejs') %>
+
+  <head>
+  <%- HeaderCss %>
+    <%- include ('../partials/head-css.ejs') %>
+
+  </head>
+
+  <%- include ('../partials/body') %>
+    <div class="group-data-[sidebar-size=sm]:min-h-sm group-data-[sidebar-size=sm]:relative">
+      <%- include ('../partials/menu') %>
+        <div class="relative min-h-screen group-data-[sidebar-size=sm]:min-h-sm">
+          <%- include ('../partials/page-wrapper') %>
+            <div class="container-fluid group-data-[content=boxed]:max-w-boxed mx-auto">
+              <%- body%>
+            </div>
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+        <%- include ('../partials/footer') %>
+
+    </div>
+    <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+    <%- include ('../partials/customizer') %>
+      <%- include ('../partials/vendor-scripts') %>
+        <%- FooterJs %>
+
+          <!-- App js -->
+          <script src="/assets/js/app.js"></script>
+  </body>
+
+  </html>

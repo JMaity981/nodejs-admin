@@ -1,0 +1,1 @@
+const lightbox=GLightbox({touchNavigation:!0,loop:!0,autoplayVideos:!0}),lightboxDescription=GLightbox({touchNavigation:!0,loop:!0,autoplayVideos:!0,selector:".description"});var lightboxVideo=GLightbox({selector:".video"});

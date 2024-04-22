@@ -1,0 +1,37 @@
+<%- contentFor('HeaderCss') %>
+  <%- include ('partials/title-meta', {"title":"Treemap Charts"}) %>
+
+  <%- contentFor('body') %>
+<%-include("partials/page-title", {"pagetitle": "Apexcharts" , "title" : "Treemap Charts" }) %>
+<div class="grid grid-cols-1 gap-x-5 xl:grid-cols-2">
+    <div class="card">
+        <div class="card-body">
+            <h6 class="mb-4 text-15">Basic</h6>
+            <div id="basicTreemap" class="apex-charts" data-chart-colors='["bg-custom-500"]' dir="ltr"></div>
+        </div>
+    </div><!--end card-->
+    <div class="card">
+        <div class="card-body">
+            <h6 class="mb-4 text-15">Treemap Multiple Series</h6>
+            <div id="treemapMultipleSeries" class="apex-charts" dir="ltr"></div>
+        </div>
+    </div><!--end card-->
+    <div class="card">
+        <div class="card-body">
+            <h6 class="mb-4 text-15">Color Range</h6>
+            <div id="colorRange" class="apex-charts" dir="ltr"></div>
+        </div>
+    </div><!--end card-->
+    <div class="card">
+        <div class="card-body">
+            <h6 class="mb-4 text-15">Distributed Chart</h6>
+            <div id="distributedChart" class="apex-charts" dir="ltr"></div>
+        </div>
+    </div><!--end card-->
+</div><!--end grid-->
+    <%- contentFor('FooterJs') %>
+    <!-- apexcharts js -->
+    <script src="/assets/libs/apexcharts/apexcharts.min.js"></script>
+    
+    <!-- treemap init js-->
+    <script src="/assets/js/pages/apexcharts-treemap.init.js"></script>

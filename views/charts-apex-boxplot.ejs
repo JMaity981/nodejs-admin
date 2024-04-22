@@ -1,0 +1,32 @@
+<%- contentFor('HeaderCss') %>
+  <%- include ('partials/title-meta', {"title":"Boxplot Charts"}) %>
+
+  <%- contentFor('body') %>
+<%-include("partials/page-title", {"pagetitle": "Apexcharts" , "title" : "Boxplot Charts" }) %>
+<div class="grid grid-cols-1 gap-x-5 xl:grid-cols-2">
+    <div class="card">
+        <div class="card-body">
+            <h6 class="mb-4 text-15">Basic</h6>
+            <div id="basicBoxplot" class="apex-charts" data-chart-colors='["bg-custom-500", "bg-slate-100"]' dir="ltr"></div>
+        </div>
+    </div><!--end card-->
+    <div class="card">
+        <div class="card-body">
+            <h6 class="mb-4 text-15">Boxplot-Scatter</h6>
+            <div id="boxplotScatterChart" class="apex-charts" data-chart-colors='["bg-custom-500", "bg-green-500"]' dir="ltr"></div>
+        </div>
+    </div><!--end card-->
+    <div class="card">
+        <div class="card-body">
+            <h6 class="mb-4 text-15">Horizontal BoxPlot</h6>
+            <div id="boxplotHorizontalChart" class="apex-charts" data-chart-colors='["bg-slate-50", "bg-slate-200"]' dir="ltr"></div>
+        </div>
+    </div><!--end card-->
+</div><!--end grid-->
+
+    <%- contentFor('FooterJs') %>
+    <!-- apexcharts js -->
+    <script src="/assets/libs/apexcharts/apexcharts.min.js"></script>
+    
+    <!-- boxplot init js-->
+    <script src="/assets/js/pages/apexcharts-boxplot.init.js"></script>

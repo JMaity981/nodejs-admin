@@ -1,0 +1,1 @@
+var ckClassicEditor=document.querySelectorAll(".ckeditor-balloon");ckClassicEditor&&Array.from(ckClassicEditor).forEach((function(){BalloonEditor.create(document.querySelector(".ckeditor-balloon")).catch((function(o){console.error(o)}))}));

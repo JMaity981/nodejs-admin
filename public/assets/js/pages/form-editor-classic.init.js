@@ -1,0 +1,1 @@
+var ckClassicEditor=document.querySelectorAll(".ckeditor-classic");ckClassicEditor&&Array.from(ckClassicEditor).forEach((function(){ClassicEditor.create(document.querySelector(".ckeditor-classic")).catch((function(c){console.error(c)}))}));
